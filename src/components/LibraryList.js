@@ -9,5 +9,8 @@ class LibraryList extends Component {
 
 }
 
+const mapStateToProps = state => {
+    return { libraries: state.libraries};
+};
 
-export default connect()(LibraryList);
+export default connect(mapStateToProps)(LibraryList);
