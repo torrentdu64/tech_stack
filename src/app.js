@@ -9,12 +9,15 @@ import LibraryList from './components/LibraryList';
 const App = () => {
   return(
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText="tech stack" />
+        <LibraryList />
       </View>
     </Provider>
 
     );
 };
+
+
 
 export default App;
